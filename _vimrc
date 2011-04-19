@@ -47,6 +47,10 @@ inoremap <expr> ,df strftime('%Y-%m-%dT%H:%M:%S')
 inoremap <expr> ,dd strftime('%Y-%m-%d')
 inoremap <expr> ,dt strftime('%H:%M:%S')
 
+"set smartchr
+inoremap <expr> = smartchr#one_of(' = ', ' == ', ' === ', ' = ')
+inoremap <expr> { smartchr#one_of('{' , '#{', '{')
+
 nnoremap <C-h> :<C-u>help<Space>
 nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
 
