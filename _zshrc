@@ -29,7 +29,7 @@ setopt cdable_vars sh_word_split auto_param_keys pushd_ignore_dups
 
 # Alias and functions
 alias copy='cp -ip' del='rm -i' move='mv -i'
-alias ls='ls -F' la='ls -a' ll='ls -la'
+alias ls='ls -F --color' la='ls -a' ll='ls -la'
 alias pu=pushd po=popd dirs='dirs -v'
 alias .='source'
 alias df='df -h' du='du -h'
