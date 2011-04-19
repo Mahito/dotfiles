@@ -6,7 +6,7 @@
 ###############################################
 
 # Set Shell variable
-# WORDCHARS=$WORDCHARs:s,/,,
+# WORDCHARS=$WORDCHARS:s,/,,
 
 # 履歴サイズ、保存ファイル、保存数を設定
 HISTSIZE=200 HISTFILE=~/.zhistory SAVEHIST=180
