@@ -4,7 +4,7 @@
 autocmd!
 
 syntax on
-filetype on
+filetype plugin indent on
 
 set number
 set ruler
@@ -53,3 +53,15 @@ nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
 nnoremap gc `[v`]
 vnoremap gc :<C-u>normal gc<Enter>
 onoremap gc :<C-u>normal gc<Enter>
+
+"set autocmd
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+
+"set chara code command
+command! Cp932 edit ++enc=cp932
+command! Eucjp edit ++enc=euc-jp
+command! Iso2022jp edit ++enc=iso-2022-jp
+command! Utf8 edit ++enc=utf-8
+command! Jis Iso2022jp
+command! Sjis Cp932
