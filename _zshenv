@@ -1,0 +1,19 @@
+#############################################################
+# Mahito .zshenv file
+# initial setup file both interactive and nonintaractive zsh
+# Created by Mahito for 4.3.10
+#############################################################
+
+limit coredumpsize 0
+
+# Setup command search path
+typeset -U path
+
+#(N-/)を付けるとパスが存在しなければ無視をする
+path=($path /usr/*/bin(N-/) /usr/local/*/bin(N-/) /var/*/bin(N-/))
+
+# リモードから起動するコマンド用の環境変数を設定
+export RYSNC_RSH=ssh
+export CVS_RSH=ssh
+
+
