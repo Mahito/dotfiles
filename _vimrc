@@ -20,7 +20,7 @@ set autowrite
 set shiftwidth=2
 set textwidth=80
 
-" unlock Backspace key restricted 
+" unlock Backspace key restricted
 set backspace=eol,indent,start
 
 " set search option
@@ -31,25 +31,35 @@ set incsearch
 
 "
 set statusline=1
-"set laststatus
+set laststatus=1
 set showmode
 set showcmd
+set showmatch
 
-"set key mapping
+"normal mode key mapping
 noremap ; :
 noremap : ;
 noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
+noremap [ %
+noremap ] %
 
+"insert mode key mapping
+inoremap , ,<Space>
+inoremap " ""
+
+"auto input of daytime
 inoremap <expr> ,df strftime('%Y-%m-%dT%H:%M:%S')
 inoremap <expr> ,dd strftime('%Y-%m-%d')
 inoremap <expr> ,dt strftime('%H:%M:%S')
 
 "set smartchr
-inoremap <expr> = smartchr#one_of(' = ', ' == ', ' === ', ' = ')
-inoremap <expr> { smartchr#one_of('{' , '#{', '{')
+inoremap <expr> = smartchr#one_of('=', ' = ', ' == ', ' === ', '=')
+inoremap <expr> ( smartchr#one_of('(' , '()', '(')
+inoremap <expr> { smartchr#one_of('{' , '{}', '#{}', '{')
+inoremap <expr> [ smartchr#one_of('[' , '[]', '[')
 
 nnoremap <C-h> :<C-u>help<Space>
 nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
@@ -61,6 +71,10 @@ onoremap gc :<C-u>normal gc<Enter>
 "set autocmd
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+"delete space before save
+autocmd BufWritePre * :%s/\s\+$//ge
+"move to line of last edit when file open
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 
 "set chara code command
 command! Cp932 edit ++enc=cp932
