@@ -14,9 +14,9 @@ set wildmenu
 set smartindent
 "set autoindent
 set autowrite
-"set tabstop=4
-"set softtabstop=4
-"set expandtab=0
+set tabstop=4
+set softtabstop=2
+set expandtab
 set shiftwidth=2
 set textwidth=80
 
