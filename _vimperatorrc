@@ -27,36 +27,36 @@ set wildoptions=auto
 " キーマップ設定
 "+---------------------------------------------------------+
 "yで選択範囲をコピー
-map y :echo 'Yank!'<CR>Y
+"map y :echo 'Yank!'<CR>Y
 
 "j/kの移動量を5倍に
 map j 5<C-e>
 map k 5<C-y>
 
 "<BS>で「戻る」
-map <BS> H
+noremap <BS> H
 
 "<A-Left>/<A-Right>かh/lでタブ移動
 map <A-Left> <C-p>
 map <A-Right> <C-n>
-map h <C-p>
-map l <C-n>
+noremap h <C-p>
+noremap l <C-n>
 
 "<S-Left>/<S-Right>で現在のタブの位置変更
 map <S-Left>  :tabmove! -1<CR>
 map <S-Right> :tabmove! +1<CR>
 
 "sで現在のページを保存
-"map s :saveas<CR>
+noremap s :saveas<CR>
 
 "<A-h>でヘルプを表示
-map <A-h> :help<CR>
+noremap <A-h> :help<CR>
 
 "Ctrl+rで再起動,Ctrl+hでヘルプ ,sで設定ファイル再読込
-map <C-r> :restart<CR>
-map ,s :so ~/.vimperatorrc<CR>
+noremap <C-r> :restart<CR>
+noremap ,s :so ~/.vimperatorrc<CR>
 
-" OSのキーバインドを再現 
+" OSのキーバインドを再現
 noremap <C-a> <C-v><C-a>
 noremap <C-c> <C-v><C-c>
 noremap ; :
