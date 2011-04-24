@@ -9,7 +9,7 @@
 # WORDCHARS=$WORDCHARS:s,/,,
 
 # 履歴サイズ、保存ファイル、保存数を設定
-HISTSIZE=200 HISTFILE=~/.zhistory SAVEHIST=180
+HISTSIZE=20000 HISTFILE=~/.zhistory SAVEHIST=20000
 
 # プロンプト前方に"マシン名{ユーザ名}% "で表示
 PROMPT='%m(%n)%% '
@@ -20,10 +20,11 @@ RPROMPT='[%~]'
 # Set shell option
 # Enable option is less mutable
 # Disable option is conbiniente, but more mutable
-setopt auto_cd auto_remove_slash auto_name_dirs
+setopt auto_cd auto_remove_slash auto_name_dirs auto_pushd
 setopt extended_history hist_ignore_dups hist_ignore_space prompt_subst
 setopt extended_glob list_types no_beep always_last_prompt
 setopt cdable_vars sh_word_split auto_param_keys pushd_ignore_dups
+setopt correct list_packed nolistbeep
 #setopt auto_menu correct rm_star_silent sun_keyboard_hack
 #setopt share_history inc_append_history
 
@@ -55,6 +56,15 @@ bindkey -e
 zstyle ':completion:*' format '%BCompleting %d%b'
 zstyle ':completion;*' group-name ''
 autoload -U compinit && compinit
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^p" history-beginning-search-backward-end
+bindkey "^n" history-beginning-search-forward-end
+
+autoload zed
+autoload colors
+colors
 
 # Load RVM into a shell session *as a function*
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
