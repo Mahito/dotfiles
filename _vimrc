@@ -48,7 +48,6 @@ noremap ] %
 
 "insert mode key mapping
 inoremap , ,<Space>
-inoremap " ""
 
 "auto input of daytime
 inoremap <expr> ,df strftime('%Y-%m-%dT%H:%M:%S')
@@ -56,7 +55,7 @@ inoremap <expr> ,dd strftime('%Y-%m-%d')
 inoremap <expr> ,dt strftime('%H:%M:%S')
 
 "set smartchr
-inoremap <expr> = smartchr#one_of('=', ' = ', ' == ', ' === ', '=')
+inoremap <expr> = smartchr#one_of('= ', '== ', '=== ', '= ')
 inoremap <expr> ( smartchr#one_of('(' , '()', '(')
 inoremap <expr> { smartchr#one_of('{' , '{}', '#{}', '{')
 inoremap <expr> [ smartchr#one_of('[' , '[]', '[')
