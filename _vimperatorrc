@@ -11,8 +11,10 @@ source! /home/mahito/.vimperatorrc.local
 "ブラウザタイトルの変更
 set titlestring=Firefox
 
-"メニュー/ツール/リンクを表示
-set guioptions=mB
+"メニュー/ツールを表示
+"set guioptions=mb
+"アドオン/ナビゲーションを非表示
+set toolbars=noaddons,nonavigation
 
 "ページ全体で検索語を強調表示
 set hlsearch
@@ -21,7 +23,8 @@ set hlsearch
 set visualbell
 
 "
-set wildoptions=auto
+"set wildoptions=auto
+set wildmode
 
 "+---------------------------------------------------------+
 " キーマップ設定
