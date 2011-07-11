@@ -14,7 +14,7 @@ encoding utf-8 utf-8
 defkanji utf-8
 
 # エスケープをCtrl+zに
-escape ^Zz
+escape ^Jj
 
 # ハングアップ時に自動でタッチ
 autodetach on
