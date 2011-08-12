@@ -49,5 +49,10 @@ bind -c resize ^] command
 bind -c resize j eval 'resize +1' 'command -c resize'
 bind -c resize k eval 'resize -1' 'command -c resize'
 
+# split window evenly when terminal start
 screen -t zsh 1 zsh -l
 screen -t zsh 0 zsh -l
+select 1
+split
+focus
+select 0
