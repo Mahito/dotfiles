@@ -52,7 +52,9 @@ bind -c resize k eval 'resize -1' 'command -c resize'
 # split window evenly when terminal start
 screen -t zsh 1 zsh -l
 screen -t zsh 0 zsh -l
+split -v
+select 0
+focus
 select 1
 split
 focus
-select 0
