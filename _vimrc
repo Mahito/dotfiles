@@ -82,3 +82,13 @@ command! Iso2022jp edit ++enc=iso-2022-jp
 command! Utf8 edit ++enc=utf-8
 command! Jis Iso2022jp
 command! Sjis Cp932
+
+"load bundles config file
+if filereadable(expand('.vim/conf/bundle.vim'))
+  source .vim/conf/bundle.vim
+endif
+
+"load bundles config file
+if filereadable(expand('.vim/conf/autocmd.vim'))
+  source .vim/conf/autocmd.vim
+endif

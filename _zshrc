@@ -30,7 +30,7 @@ setopt correct list_packed nolistbeep
 
 # Alias and functions
 alias copy='cp -ip' del='rm -i' move='mv -i'
-alias ls='ls -F --color' la='ls -a' ll='ls -la'
+alias ls='ls -F -G' la='ls -a' ll='ls -la'
 alias pu=pushd po=popd dirs='dirs -v'
 alias .='source'
 alias df='df -h' du='du -h'
@@ -68,4 +68,7 @@ autoload colors
 colors
 
 # Load RVM into a shell session *as a function*
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+#     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# Load RVM into a shell session *as a function*
+[[ -s "/Users/Mahito/.rvm/scripts/rvm" ]] && . "/Users/Mahito/.rvm/scripts/rvm"
