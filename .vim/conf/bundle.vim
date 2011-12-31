@@ -23,5 +23,8 @@ Bundle 'quickrun.vim'
 " run a part of code plugin
 Bundle 'batch.vim'
 
+" file that common user open can be saved to root
+Bundle 'sudo.vim'
+
 filetype plugin indent on
 
