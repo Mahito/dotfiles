@@ -84,11 +84,11 @@ command! Jis Iso2022jp
 command! Sjis Cp932
 
 "load bundles config file
-if filereadable(expand('.vim/conf/bundle.vim'))
-  source .vim/conf/bundle.vim
+if filereadable(expand('~/.vim/conf/bundle.vim'))
+  source ~/.vim/conf/bundle.vim
 endif
 
 "load bundles config file
-if filereadable(expand('.vim/conf/autocmd.vim'))
-  source .vim/conf/autocmd.vim
+if filereadable(expand('~/.vim/conf/autocmd.vim'))
+  source ~/.vim/conf/autocmd.vim
 endif
