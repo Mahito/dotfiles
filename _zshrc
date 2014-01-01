@@ -67,8 +67,4 @@ autoload zed
 autoload colors
 colors
 
-# Load RVM into a shell session *as a function*
-#     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-# Load RVM into a shell session *as a function*
-[[ -s "/Users/Mahito/.rvm/scripts/rvm" ]] && . "/Users/Mahito/.rvm/scripts/rvm"
+eval "$(rbenv init - zsh)"
