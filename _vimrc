@@ -74,6 +74,8 @@ autocmd WinLeave * setlocal nocursorline
 autocmd BufWritePre * :%s/\s\+$//ge
 "move to line of last edit when file open
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
+" set encode magic comment
+autocmd BufNewFile *.rb 0r ~/.vimrc/templates/rb.tpl
 
 "set chara code command
 command! Cp932 edit ++enc=cp932
