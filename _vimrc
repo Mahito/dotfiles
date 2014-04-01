@@ -74,7 +74,7 @@ autocmd WinLeave * setlocal nocursorline
 autocmd BufWritePre * :%s/\s\+$//ge
 "move to line of last edit when file open
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
-" set encode magic comment
+"set encode magic comment
 autocmd BufNewFile *.rb 0r ~/.vim/templates/rb.tpl
 
 "set chara code command
@@ -85,7 +85,6 @@ command! Utf8 edit ++enc=utf-8
 command! Jis Iso2022jp
 command! Sjis Cp932
 
-"load bundles config file
 if filereadable(expand('~/.vim/conf/neobundle.vim'))
   source ~/.vim/conf/neobundle.vim
 endif
