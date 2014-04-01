@@ -39,62 +39,29 @@ NeoBundle 'kana/vim-smartchr'
 NeoBundle 'scrooloose/syntastic'
 
 " snippet support plugin
+" the abbreviation of 'neo-completion with cache'
+NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/vimshell.vim'
->>>>>>> rbenv対応とNeoBundle対応
 
 " search and display information from arbitrary sources
 NeoBundle 'Shougo/unite.vim'
-
-<<<<<<< HEAD
-" ruby coding support plugin
-NeoBundle 'vim-ruby/vim-ruby'
-
-" rails coding support plugin
-NeoBundle 'tpope/vim-rails'
-=======
-" the abbreviation of 'neo-completion with cache'
-NeoBundle 'Shougo/neocomplcache.vim'
 
 " script qyuckly run plugin
 NeoBundle 'thinca/vim-quickrun'
 
 " helps to end certain structures automatically
 NeoBundle 'tpope/vim-endwise'
+
+" rails coding support plugin
+NeoBundle 'tpope/vim-rails'
 
 NeoBundle 'VimClojure'
 
 " ruby coding support plugin
 NeoBundle 'vim-ruby/vim-ruby'
 
-" rails coding support plugin
-NeoBundle 'tpope/vim-rails'
-
 " Required:
 filetype plugin indent on
-
-" helps to end certain structures automatically
-NeoBundle 'tpope/vim-endwise'
-
-" syntax checking plugin
-NeoBundle 'scrooloose/syntastic'
-
-" Ruby static code analyzer
-NeoBundle 'bbatsov/rubocop'
-
-" snippet support plugin
-NeoBundle 'Shougo/neosnippet.vim'
-
-" the abbreviation of 'neo-completion with cache'
-NeoBundle 'Shougo/neocomplcache'
-
-" easier to demonstrate than explain
-NeoBundle 'AndrewRadev/switch.vim'
-
-" script qyuckly run plugin
-NeoBundle 'thinca/vim-quickrun'
-
-" Insert several candidates with a single key
-NeoBundle 'kana/vim-smartchr'
