@@ -1,5 +1,6 @@
 if has('vim_starting')
   set nocompatible               " Be iMproved
+  " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
@@ -19,51 +20,48 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " \ }
 
 " My Bundles here:
-" Refer to |:NeoBundle-examples|.
-"
-" Note: You don't set neobundle setting in .gvimrc!
-
-" ...
-
-filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-
-" Installation check.
-NeoBundleCheck
-
-" search and display information from arbitrary sources
-NeoBundle 'Shougo/unite.vim'
-
-" ruby coding support plugin
-NeoBundle 'vim-ruby/vim-ruby'
-
-" rails coding support plugin
-NeoBundle 'tpope/vim-rails'
-
-" helps to end certain structures automatically
-NeoBundle 'tpope/vim-endwise'
-
-" syntax checking plugin
-NeoBundle 'scrooloose/syntastic'
+" easier to demonstrate than explain
+NeoBundle 'AndrewRadev/switch.vim'
 
 " Ruby static code analyzer
 NeoBundle 'bbatsov/rubocop'
 
+NeoBundle 'elzr/vim-json'
+
+NeoBundle 'flazz/vim-colorschemes'
+
+NeoBundle 'jpalardy/vim-slime'
+
+" Insert several candidates with a single key
+NeoBundle 'kana/vim-smartchr'
+
+" syntax checking plugin
+NeoBundle 'scrooloose/syntastic'
+
 " snippet support plugin
-NeoBundle 'Shougo/neosnippet.vim'
-
 " the abbreviation of 'neo-completion with cache'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'Shougo/vimshell.vim'
 
-" easier to demonstrate than explain
-NeoBundle 'AndrewRadev/switch.vim'
+" search and display information from arbitrary sources
+NeoBundle 'Shougo/unite.vim'
 
 " script qyuckly run plugin
 NeoBundle 'thinca/vim-quickrun'
 
-" Insert several candidates with a single key
-NeoBundle 'kana/vim-smartchr'
+" helps to end certain structures automatically
+NeoBundle 'tpope/vim-endwise'
+
+" rails coding support plugin
+NeoBundle 'tpope/vim-rails'
+
+NeoBundle 'VimClojure'
+
+" ruby coding support plugin
+NeoBundle 'vim-ruby/vim-ruby'
+
+" Required:
+filetype plugin indent on
