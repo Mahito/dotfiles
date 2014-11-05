@@ -3,7 +3,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -32,9 +32,6 @@ filetype plugin indent on     " Required!
 " :NeoBundleInstall(!)    - install(update) bundles
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
-" Installation check.
-NeoBundleCheck
-
 " search and display information from arbitrary sources
 NeoBundle 'Shougo/unite.vim'
 
@@ -55,6 +52,7 @@ NeoBundle 'bbatsov/rubocop'
 
 " snippet support plugin
 NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
 
 " the abbreviation of 'neo-completion with cache'
 NeoBundle 'Shougo/neocomplcache'
@@ -67,3 +65,9 @@ NeoBundle 'thinca/vim-quickrun'
 
 " Insert several candidates with a single key
 NeoBundle 'kana/vim-smartchr'
+
+call neobundle#end()
+
+" Installation check.
+NeoBundleCheck
+

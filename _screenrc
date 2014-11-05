@@ -56,5 +56,4 @@ split -v
 select 0
 focus
 select 1
-split
 focus
