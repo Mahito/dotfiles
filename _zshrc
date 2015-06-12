@@ -68,8 +68,8 @@ autoload zed
 autoload colors
 colors
 
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init - zsh)"
+export PATH=$HOME/.anyenv/bin:$PATH
+eval "$(anyenv init -)"
 
 export JAVA_HOME=`/usr/libexec/java_home`
 
@@ -92,4 +92,4 @@ function do_enter() {
 
 zle -N do_enter
 bindkey '^m' do_enter
-
+eval "$(direnv hook zsh)"
