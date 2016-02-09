@@ -68,8 +68,8 @@ autoload zed
 autoload colors
 colors
 
-export PATH=$HOME/.anyenv/bin:$PATH
-eval "$(anyenv init -)"
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init - zsh)"
 
 export JAVA_HOME=`/usr/libexec/java_home`
 

@@ -10,7 +10,7 @@ limit coredumpsize 0
 typeset -U path
 
 #(N-/)を付けるとパスが存在しなければ無視をする
-path=($path /usr/*/bin(N-/) /usr/local/*/bin(N-/) /var/*/bin(N-/))
+path=(/usr/*/bin(N-/) /usr/*/sbin(N-/) /var/*/bin(N-/) $path)
 
 # リモードから起動するコマンド用の環境変数を設定
 export RYSNC_RSH=ssh
