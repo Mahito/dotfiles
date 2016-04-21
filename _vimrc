@@ -58,7 +58,7 @@ inoremap <expr> ,dt strftime('%H:%M:%S')
 inoremap <expr> = smartchr#one_of('=', '== ', '=== ', '=')
 inoremap <expr> ( smartchr#one_of('(' , '()', '(')
 inoremap <expr> { smartchr#one_of('{' , '{}', '{{}}', '{')
-inoremap <expr> [ smartchr#one_of('[' , '[]', '[')
+inoremap <expr> [ smartchr#one_of('[' , '[]', '[[]]', '[')
 
 nnoremap <C-h> :<C-u>help<Space>
 nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
