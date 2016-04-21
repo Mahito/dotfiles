@@ -68,10 +68,17 @@ autoload zed
 autoload colors
 colors
 
+# anyenv setting
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init - zsh)"
 
+# Java setting
 export JAVA_HOME=`/usr/libexec/java_home`
+
+# Golang Setting
+export GOPATH="$HOME/.go"
+export PATH="$GOPATH/bin:$PATH"
+export GOROOT=`go env GOROOT`
 
 function do_enter() {
   if [ -n "$BUFFER" ]; then
