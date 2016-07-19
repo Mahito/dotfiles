@@ -69,6 +69,11 @@ NeoBundle 'kana/vim-smartchr'
 " Golang vim plugin
 NeoBundle 'fatih/vim-go'
 
+" Python vim plugin
+" We need run command as follow
+" `cd ~/.vim/bundle/jedi-vim/jedi/ && git submodule update --init`
+NeoBundle 'davidhalter/jedi-vim'
+
 call neobundle#end()
 
 " Installation check.

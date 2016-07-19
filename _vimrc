@@ -85,17 +85,11 @@ command! Utf8 edit ++enc=utf-8
 command! Jis Iso2022jp
 command! Sjis Cp932
 
-if filereadable(expand('~/.vim/conf/neobundle.vim'))
-  source ~/.vim/conf/neobundle.vim
-endif
-
-"load bundles config file
-if filereadable(expand('~/.vim/conf/autocmd.vim'))
-  source ~/.vim/conf/autocmd.vim
-endif
-
-"load neocomplcache config file
-if filereadable(expand('~/.vim/conf/neocomplcache.vim'))
-  source ~/.vim/conf/neocomplcache.vim
-endif
-
+" load * config files
+let configs = ['neobundle', 'autocmd', 'neocomlcache']
+for conf in configs
+  let path = join(['~/.vim/conf/', conf, '.vim'])
+  if filereadable(expand(path))
+    source path
+  endif
+endfor
