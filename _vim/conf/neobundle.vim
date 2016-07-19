@@ -66,6 +66,9 @@ NeoBundle 'thinca/vim-quickrun'
 " Insert several candidates with a single key
 NeoBundle 'kana/vim-smartchr'
 
+" Golang vim plugin
+NeoBundle 'fatih/vim-go'
+
 call neobundle#end()
 
 " Installation check.
