@@ -86,7 +86,7 @@ command! Jis Iso2022jp
 command! Sjis Cp932
 
 " load * config files
-let configs = ['neobundle', 'autocmd', 'neocomlcache']
+let configs = ['neobundle', 'autocmd', 'neocomplcache', 'jedi']
 for conf in configs
   let path = join(['~/.vim/conf/', conf, '.vim'])
   if filereadable(expand(path))
