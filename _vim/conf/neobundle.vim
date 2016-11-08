@@ -74,8 +74,12 @@ NeoBundle 'fatih/vim-go'
 " `cd ~/.vim/bundle/jedi-vim/jedi/ && git submodule update --init`
 NeoBundle 'davidhalter/jedi-vim'
 
+" status line customize
+NeoBundle 'itchyny/lightline.vim'
+
 call neobundle#end()
 
 " Installation check.
 NeoBundleCheck
+
 
