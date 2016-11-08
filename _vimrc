@@ -8,17 +8,20 @@ filetype plugin indent on
 
 set number
 set ruler
+set cursorline
 set cmdheight=2
 set title
 set wildmenu
 set smartindent
+
 "set autoindent
 set autowrite
 set tabstop=4
 set softtabstop=2
 set expandtab
 set shiftwidth=2
-set textwidth=80
+set textwidth=100
+set history=5000
 
 " unlock Backspace key restricted
 set backspace=eol,indent,start
@@ -29,7 +32,6 @@ set smartcase
 set hlsearch
 set incsearch
 
-"
 set statusline=1
 set laststatus=1
 set showmode
