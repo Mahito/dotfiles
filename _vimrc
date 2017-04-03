@@ -90,3 +90,4 @@ command! Sjis Cp932
 " load * config files
 set runtimepath+=~/.vim/
 runtime! conf/*.vim
+let go_fmt_fail_silently = 1
