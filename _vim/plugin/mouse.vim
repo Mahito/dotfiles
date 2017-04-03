@@ -1,5 +1,4 @@
 if has('mouse')
-    set mouse=a
     if has('mouse_sgr')
         set ttymouse=sgr
     elseif v:version > 703 || v:version is 703 && has('patch632')
