@@ -77,6 +77,9 @@ NeoBundle 'davidhalter/jedi-vim'
 " status line customize
 NeoBundle 'itchyny/lightline.vim'
 
+" Vim syntax file & snippets for Docker's Dockerfile
+NeoBundle 'ekalinin/Dockerfile.vim'
+
 call neobundle#end()
 
 " Installation check.
