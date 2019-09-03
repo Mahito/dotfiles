@@ -80,9 +80,11 @@ NeoBundle 'itchyny/lightline.vim'
 " Vim syntax file & snippets for Docker's Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
 
+" Jsonnet filetype plugin for Vim.
+NeoBundle 'google/vim-jsonnet'
+
 call neobundle#end()
 
 " Installation check.
 NeoBundleCheck
-
 
